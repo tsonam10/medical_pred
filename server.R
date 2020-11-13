@@ -1,6 +1,6 @@
 library(data.table)
 
-model <- lm(charges ~ smoker + age_sqt + bmi + children + region, data = df)
+model <- lm(charges ~ smoker + bmi + children + region, data = df)
 
 shinyServer(function(input, output, session){
   #input data
